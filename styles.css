@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    height: 100vh;
+    width: 100%;
+    background-color: #A2D2FF;
+}
+
+
+
+/* side navigation bar */
+
+.side-nav{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: #D7E9F7;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.side-nav ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.side-nav ul li:hover{
+    background: white;
+}
+
+.side-nav ul li:hover span{
+    color: black;
+}
+
+.side-nav ul li:hover a{
+    color: black;
+}
+
+.side-nav ul li span{
+ width: 15px;
+}
+
+.anchor{
+    margin-left: 12px;
+    text-decoration: none;
+    color: rgb(65, 50, 151);
+    font-size: 1.2em;
+}
+
+.icon{
+    font-size: 1.2em;
+    color: white;
+}
+
+
+.side-nav ul li:nth-child(5){
+    padding-right: 50px;
+}
+.anchor-help{
+    padding-left: 6px;
+}
+
+/* toggle menu */
+
+.main{
+    position: relative;
+    left: 259px;
+    width: 3%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    left: 0;
+}
+
+/* On click menu functions */
+
+.activated{
+    width: 70px;
+}
+
+
+.activated a{
+    display: none;
+}
+
+.activated ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+.activated .icon{
+position: absolute;
+right: 30px;
+}
+
+.activated2{
+    left: 80px;
+}
+
+
+/* flip pic */
+
+
+.title{
+    text-align: center;
+    margin: 40px;
+    padding: 0%;
+}
+
+
+.flip-card{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+}
+
+.flip-card-back{
+    background-color: #D7E9F7;
+    transition: 0.8s;
+    color: aliceblue ;
+    width: 249px;
+    height: 60%;
+    position: relative;
+    bottom: 200px;
+    left: 0.6px;
+    padding-right: 3.5px;
+    padding-bottom: 2px;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+
+.flip-card-back .back-header{
+    height: 45%;
+    text-align: center;
+}
+
+.flip-card-back .back-footer button {
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.flip-card-back .back-footer{
+    position: relative;
+    bottom: 50px;
+}
+
+
+.flip-card-inner{
+    position: relative;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-back .flip-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .back-footer{
+    height: 55%;
+    padding: 0 15px;
+}
+
+.flip-all{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    left: 450px;
+    top: 100px;
+}
